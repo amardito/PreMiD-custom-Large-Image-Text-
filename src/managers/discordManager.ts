@@ -47,7 +47,7 @@ class RPCClient {
 
 		if (presenceData.trayTitle)
 			trayManager.tray.setTitle(presenceData.trayTitle);
-
+		//presenceData.presenceData.largeImageText = "Mardovu - Browser";       // change the value of Large Image Text instead of name of "PreMiD {{Version}} - Ext {{Ext_Version}}
 		this.client
 			.setActivity(presenceData.presenceData)
 			.catch(() => this.destroy());
